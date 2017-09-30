@@ -1,0 +1,176 @@
+body {
+    background-color: green;
+}
+
+
+#score1 {
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    bottom: 1%;
+    right: 1%;
+    z-index: 500;
+    text-align: center;
+}
+
+#spanscore {
+    position: absolute;
+    height: 40%;
+    width: 60%;
+    background-color: blue;
+    bottom: 0%;
+    left: calc(50% - 60px );
+    text-align: center;
+    z-index: 500;
+}
+
+#playground {
+    background-color: grey;
+    position: absolute;
+    height: 810px;
+    width: 600px;
+    left: calc(50% - 300px);
+    top: 25%;
+}
+
+.wall {
+    background-color: blue;
+    position: absolute;
+    height: 100%;
+    width: 5%;
+    top: 0%;
+}
+
+#leftwall {
+    left: 0%;
+}
+
+#rightwall {
+    right: 0%;
+}
+
+
+.hwall {
+    background-color: blue;
+    position: absolute;
+    width: calc(100% - 60px - 125px);
+    height: 30px;
+}
+
+.left {
+    left: 30px;
+}
+
+.right {
+    right: 30px;
+}
+
+
+[hwallno="1"] {
+    top: 0px;
+}
+
+
+[hwallno="2"] {
+    top: 130px;
+}
+
+[hwallno="3"] {
+    top: 260px;
+}
+
+
+[hwallno="4"] {
+    top: 390px;
+}
+
+[hwallno="5"] {
+    top: 520px;
+}
+
+
+[hwallno="6"] {
+    top: 650px;
+}
+
+
+[hwallno="7"] {
+    top: 780px;
+}
+
+
+#tank {
+    background-color: brown;
+    position: absolute;
+    z-index: 5;
+    width: 55px;
+    height: 70px;
+}
+
+.light {
+    background-color: yellow;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    bottom: 0%;
+    z-index: 40;
+}
+
+
+#tleft {
+    left: 0%;
+}
+
+
+#tright {
+    right: 0%;
+}
+
+#turret {
+    background-color: black;
+    position: absolute;
+    z-index: 45;
+    height: 30px;
+    width: 10px;
+    top: 80%;
+    left: 40%;
+}
+
+#tank.west {
+    transform: rotate(90deg);
+}
+
+#tank.north {
+    transform: rotate(180deg);
+}
+
+#tank.east {
+    transform: rotate(270deg);
+}
+
+#trophy {
+    height: 120px;
+    width: 120px;
+    bottom: 0px;
+    left: 80%;
+    position: absolute;
+}
+
+    #trophy .upper {
+        position: absolute;
+        top: 35px;
+        border-top: 80px solid gold;
+        border-bottom: 0px;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+    }
+
+    #trophy .lower {
+        position: absolute;
+        bottom: 35px;
+        border-bottom: 80px solid gold;
+        border-top: 0px;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+    }
